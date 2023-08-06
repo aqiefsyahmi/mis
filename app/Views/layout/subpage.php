@@ -14,6 +14,7 @@
             justify-content: center;
             height: 100vh;
         }
+
         .ui.pointing.menu {
             position: fixed;
             top: 1%;
@@ -24,6 +25,7 @@
             box-shadow: none;
             border: none;
         }
+
         .background-image {
             position: fixed;
             top: 0;
@@ -35,14 +37,16 @@
             background-size: cover;
             background-attachment: fixed;
             /* Set the opacity value as desired (range from 0 to 1) */
-            opacity: 0.6; 
+            opacity: 0.6;
             /* Push the background image to the back */
-            z-index: -1; 
+            z-index: -1;
         }
+
         .bold-text {
             font-weight: bold;
             text-align: left;
         }
+
         .ui.inverted.segment {
             position: fixed;
             top: 0;
@@ -62,17 +66,17 @@
 <body>
 
 
-      <div class="ui pointing menu">
+    <div class="ui pointing menu">
         <div class="right menu">
             <a href="/" class="ui secondary button">
                 <i class="ui chevron left icon icon"></i>
                 To Login Page
             </a>
         </div>
-      </div> 
-    
+    </div>
+
     <div class="background-image"></div>
-    
+
     <?= $this->renderSection('content') ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
