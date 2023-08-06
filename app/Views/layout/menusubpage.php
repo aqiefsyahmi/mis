@@ -15,6 +15,7 @@
             height: 100vh;
         }
 
+
         .ui.inverted.segment {
             position: fixed;
             top: 0;
@@ -100,17 +101,17 @@
 
     <div class="ui inverted segment">
         <div class="ui inverted secondary pointing menu">
-            <a href="/dashboard" class="item">
+            <a href="<?= url_to('dashboard') ?>" class="item">
                 Dashboard
             </a>
-            <a href="/urine_test" class="item">
+            <a href="<?= url_to('urine_test') ?>" class="item">
                 Urine Test Request Form
             </a>
-            <a href="/image_repo" class="item">
+            <a href="<?= url_to('image_repo') ?>" class="item">
                 Image Repository
             </a>
             <div class="right menu">
-                <a href="/" class="ui secondary button">
+                <a href="<?= url_to('logout') ?>" class="ui secondary button">
                     <i class="ui logout icon"></i>
                     Logout
                 </a>
