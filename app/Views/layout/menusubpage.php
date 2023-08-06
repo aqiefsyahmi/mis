@@ -14,7 +14,7 @@
             justify-content: center;
             height: 100vh;
         }
-      
+
         .ui.inverted.segment {
             position: fixed;
             top: 0;
@@ -34,10 +34,10 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
-            opacity: 0.6;
             /* Set the opacity value as desired (range from 0 to 1) */
-            z-index: -1;
+            opacity: 0.6;
             /* Push the background image to the back */
+            z-index: -1;
         }
 
         .bold-text {
@@ -76,7 +76,6 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             color: #ffffff;
-            /* Set the color to red (#f00) for a red button */
         }
 
         .dob-field {
@@ -100,23 +99,23 @@
 <body>
 
     <div class="ui inverted segment">
-      <div class="ui inverted secondary pointing menu">
-        <a href="/dashboard" class="item">
-            Dashboard
-        </a>
-        <a href="/urine_test" class="item">
-            Urine Test Request Form
-        </a>
-        <a href="/image_repo" class="item">
-            Image Repository
-        </a>
-        <div class="right menu">
-            <a href="/" class="ui secondary button">
-                <i class="ui logout icon"></i>
-                Logout
+        <div class="ui inverted secondary pointing menu">
+            <a href="/dashboard" class="item">
+                Dashboard
             </a>
+            <a href="/urine_test" class="item">
+                Urine Test Request Form
+            </a>
+            <a href="/image_repo" class="item">
+                Image Repository
+            </a>
+            <div class="right menu">
+                <a href="/" class="ui secondary button">
+                    <i class="ui logout icon"></i>
+                    Logout
+                </a>
+            </div>
         </div>
-      </div> 
     </div>
 
     <div class="background-image"></div>
@@ -126,21 +125,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
-      $(document).ready(function() {
-        // Get the current page URL
-        var currentUrl = window.location.pathname;
-        
-        // Add click event handler to all menu items
-        $('.ui.inverted.secondary.pointing.menu a.item').each(function() {
-          var menuItemUrl = $(this).attr('href');
-        
-          // Check if the menu item URL matches the current page URL
-          if (currentUrl === menuItemUrl) {
-            $(this).addClass('active item'); // Add the "active item" class to the matching link
-          }
-        });
-      });
+        $(document).ready(function() {
+            // Get the current page URL
+            var currentUrl = window.location.pathname;
 
+            // Add click event handler to all menu items
+            $('.ui.inverted.secondary.pointing.menu a.item').each(function() {
+                var menuItemUrl = $(this).attr('href');
+
+                // Check if the menu item URL matches the current page URL
+                if (currentUrl === menuItemUrl) {
+                    // Add the "active item" class to the matching link
+                    $(this).addClass('active item');
+                }
+            });
+        });
     </script>
 
 </body>
