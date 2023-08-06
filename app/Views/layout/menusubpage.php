@@ -15,7 +15,7 @@
             justify-content: center;
             height: 100vh;
         }
-
+      
         .ui.inverted.segment {
             position: fixed;
             top: 0;
@@ -76,7 +76,6 @@
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            /* Set the color to red (#f00) for a red button */
             color: #ffffff;
         }
 
@@ -120,8 +119,6 @@
         </div>
     </div>
 
-
-
     <div class="background-image"></div>
 
     <?= $this->renderSection('content') ?>
@@ -139,7 +136,8 @@
 
                 // Check if the menu item URL matches the current page URL
                 if (currentUrl === menuItemUrl) {
-                    $(this).addClass('active item'); // Add the "active item" class to the matching link
+                    // Add the "active item" class to the matching link
+                    $(this).addClass('active item');
                 }
             });
         });

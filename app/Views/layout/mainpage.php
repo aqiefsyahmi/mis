@@ -44,8 +44,8 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-attachment: fixed;
-      opacity: 0.6;
       /* Set the opacity value as desired (range from 0 to 1) */
+      opacity: 0.6;
     }
 
     .background-image3 {
@@ -58,8 +58,8 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-attachment: fixed;
-      opacity: 0.7;
       /* Set the opacity value as desired (range from 0 to 1) */
+      opacity: 0.7;
     }
 
     .ui.labeled.input.fluid input[type="text"] {
@@ -72,7 +72,6 @@
   </style>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
   <title><?= $this->renderSection('pageTitle') ?> | MIS</title>
 
 </head>
@@ -85,6 +84,7 @@
   <?= $this->renderSection('content') ?>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 </body>
 

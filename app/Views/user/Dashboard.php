@@ -1,10 +1,9 @@
 <?= $this->extend("layout/menusubpage") ?>
 
 <?= $this->section("pageTitle") ?>
-Dashboard
-
+<?= esc($title) ?>
 <?= $this->endSection() ?>
-  
+
 <?= $this->section("content") ?>
 <div class="ui two column centered grid" style="width: 150vh;">
   <div class="middle aligned column">
