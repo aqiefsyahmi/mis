@@ -1,7 +1,7 @@
 <?= $this->extend("layout/menusubpage") ?>
 
 <?= $this->section("pageTitle") ?>
-Urine Test Request Form
+<?= esc($title) ?>
 <?= $this->endSection() ?>
 
 <?= $this->section("content") ?>
@@ -10,7 +10,8 @@ Urine Test Request Form
   <div class="middle aligned column">
     <h1>Urine Test Request Form</h1>
     <div>Please fill in the Urine Test Request details:</div>
-    <div class="ui raised segment">
+    <form action="<?= url_to('urine_test') ?>" method="post" class="ui raised segment">
+      <?= csrf_field() ?>
       <div class="ui one column centered grid">
         <div class="column">
           <div class="bold-text" style="margin-top: 10px;">Full Name :</div>
@@ -24,15 +25,21 @@ Urine Test Request Form
           <div class="bold-text" style="margin-top: 10px;">Current Symptoms or Concerns :</div>
           <div class="ui form">
             <div class="field">
-              <textarea rows="3" placeholder="Please Enter Current Symptoms or Concerns"></textarea>
+              <textarea name="descriptions" rows="3" placeholder="Please Enter Current Symptoms or Concerns"></textarea>
             </div>
           </div>
         </div>
       </div>
       <div class="column" style="margin-top: 10px;">
+<<<<<<< HEAD
         <a href="/dashboard" class="ui black button flat no-caps" style="margin-top: 10px; margin-left: 10px; margin-right: 10px;">Submit Request</a>
       </div>
     </div>
+=======
+        <button type="submit" class="ui black button flat no-caps" style="margin-top: 10px; margin-left: 10px; margin-right: 10px;">Submit Request</button>
+      </div>
+    </form>
+>>>>>>> upstream/auth-implementation
   </div>
 
   <?= $this->endSection() ?>

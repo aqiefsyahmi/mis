@@ -2,16 +2,15 @@
 
 namespace App\Controllers;
 
-use App\Models\UserModel;
-
 class Login extends BaseController
 {
     public function index()
     {
         $pageTitle = ["title" => "Login"];
 
-        return view('user/login_page.php', $pageTitle);
+        return view('user/login_page', $pageTitle);
     }
+<<<<<<< HEAD
 
     public function login()
     {
@@ -34,4 +33,6 @@ class Login extends BaseController
 
         return var_dump($isAuth);
     }
+=======
+>>>>>>> upstream/auth-implementation
 }
