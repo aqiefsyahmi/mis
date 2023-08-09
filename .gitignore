@@ -122,6 +122,7 @@ nb-configuration.xml
 node_modules/
 package.json
 package-lock.json
+composer.lock
 
 # Visual Studio Code
 .vscode/

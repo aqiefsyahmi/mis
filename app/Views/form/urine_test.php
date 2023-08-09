@@ -31,15 +31,9 @@
         </div>
       </div>
       <div class="column" style="margin-top: 10px;">
-<<<<<<< HEAD
-        <a href="/dashboard" class="ui black button flat no-caps" style="margin-top: 10px; margin-left: 10px; margin-right: 10px;">Submit Request</a>
-      </div>
-    </div>
-=======
         <button type="submit" class="ui black button flat no-caps" style="margin-top: 10px; margin-left: 10px; margin-right: 10px;">Submit Request</button>
       </div>
     </form>
->>>>>>> upstream/auth-implementation
   </div>
 
   <?= $this->endSection() ?>

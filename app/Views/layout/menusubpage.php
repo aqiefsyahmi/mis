@@ -130,19 +130,6 @@
 
     <div class="ui inverted segment">
         <div class="ui inverted secondary pointing menu">
-<<<<<<< HEAD
-            <a href="/dashboard" class="item">
-                Dashboard
-            </a>
-            <a href="/urine_test" class="item">
-                Urine Test Request Form
-            </a>
-            <a href="/image_repo" class="item">
-                Image Repository
-            </a>
-            <div class="right menu">
-                <a href="/" class="ui secondary button">
-=======
             <a href="<?= url_to('dashboard') ?>" class="item">
                 Dashboard
             </a>
@@ -154,14 +141,13 @@
             </a>
             <div class="right menu">
                 <a href="<?= url_to('logout') ?>" class="ui secondary button">
->>>>>>> upstream/auth-implementation
                     <i class="ui logout icon"></i>
                     Logout
                 </a>
             </div>
         </div>
     </div>
-  
+
     <div class="background-image"></div>
 
     <?= $this->renderSection('content') ?>
@@ -172,10 +158,12 @@
         $(document).ready(function() {
             // Get the current page URL
             var currentUrl = window.location.pathname;
+            console.log("Current URL:", currentUrl);
 
             // Add click event handler to all menu items
             $('.ui.inverted.secondary.pointing.menu a.item').each(function() {
                 var menuItemUrl = $(this).attr('href');
+                console.log("Menu Item URL:", menuItemUrl);
 
                 // Check if the menu item URL matches the current page URL
                 if (currentUrl === menuItemUrl) {

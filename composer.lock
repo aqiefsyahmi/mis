@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "54ac0e253ace571cf687ddfdced811cd",
+    "content-hash": "e025cfae89dd1bd5f435589b58b45f3b",
     "packages": [
         {
             "name": "codeigniter4/framework",
@@ -137,16 +137,16 @@
         },
         {
             "name": "codeigniter4/shield",
-            "version": "dev-develop",
+            "version": "v1.0.0-beta.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeigniter4/shield.git",
-                "reference": "0bf28b24e6f2e7954e67cb686ce214d639812113"
+                "reference": "b5fbc784e8ab6ee8e9de103e62b15f8248c05a9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeigniter4/shield/zipball/0bf28b24e6f2e7954e67cb686ce214d639812113",
-                "reference": "0bf28b24e6f2e7954e67cb686ce214d639812113",
+                "url": "https://api.github.com/repos/codeigniter4/shield/zipball/b5fbc784e8ab6ee8e9de103e62b15f8248c05a9f",
+                "reference": "b5fbc784e8ab6ee8e9de103e62b15f8248c05a9f",
                 "shasum": ""
             },
             "require": {
@@ -167,7 +167,6 @@
                 "ext-curl": "Required to use the password validation rule via PwnedValidator class.",
                 "ext-openssl": "Required to use the JWT Authenticator."
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -201,13 +200,13 @@
                 "codeigniter4"
             ],
             "support": {
-                "docs": "https://codeigniter4.github.io/shield/",
+                "docs": "https://github.com/codeigniter4/shield/blob/develop/docs/index.md",
                 "forum": "https://github.com/codeigniter4/shield/discussions",
                 "issues": "https://github.com/codeigniter4/shield/issues",
                 "slack": "https://codeigniterchat.slack.com",
                 "source": "https://github.com/codeigniter4/shield"
             },
-            "time": "2023-07-08T15:40:14+00:00"
+            "time": "2023-04-26T08:31:55+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -2359,11 +2358,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": {
-        "codeigniter4/shield": 20
-    },
-    "prefer-stable": false,
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^7.4 || ^8.0"

@@ -28,31 +28,6 @@
         </div>
     </div>
     <div class="middle aligned column">
-<<<<<<< HEAD
-        <h1>Image Repository</h1>
-        <div>Please fill in the Image Upload details:</div>
-        <form style="margin-top: 10px;" action="/ImageRep" method="post" enctype="multipart/form-data">
-            <div class="ui raised segment">
-                <div class="ui one column centered grid">
-                    <div class="column">
-                        <div class="bold-text" style="margin-top: 10px;">Upload Image:</div>
-                        <input type="file" (change)="fileEvent($event)" class="inputfile" id="embedpollfileinput" aria-hidden="true">
-                        <label for="embedpollfileinput" class="ui small green left floated button" id="uploadButton">
-                            <i class="ui upload icon"></i>
-                            Upload Image
-                        </label>
-                        <input type="file" (change)="fileEvent($event)" class="inputfile1" id="embedpollfileinput1" aria-hidden="true">
-                        <label for="embedpollfileinput1" class="ui small red left floated button" id="reuploadButton" style="display: none;">
-                            <i class="ui upload icon"></i>
-                            Reupload Image
-                        </label>
-                    </div>
-                    <div class="column">
-                        <div class="bold-text">Comment:</div>
-                        <div class="ui form">
-                            <div class="field">
-                                <textarea rows="3" placeholder="Please describe the image"></textarea>
-=======
         <div class="ui container">
             <h1>Image Repository</h1>
             <div>Please fill in the Image Upload details:</div>
@@ -82,7 +57,6 @@
                                 <div class="field">
                                     <textarea name="descriptions" rows="3" placeholder="Please Enter Current Symptoms or Concerns"></textarea>
                                 </div>
->>>>>>> upstream/auth-implementation
                             </div>
                             <!-- error message -->
                             <?php foreach ($errors as $error) : ?>
@@ -93,15 +67,11 @@
                                 <p><?= $success ?></p>
                             <?php endif ?>
                         </div>
-<<<<<<< HEAD
-=======
+                        <a href="#" class="ui red button flat no-caps" style="margin-top: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 20px;" onclick="resetForm()">Reset Form</a>
                         <button type="submit" class="ui black button flat no-caps" style="margin-top: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 20px;">Submit Request</button>
->>>>>>> upstream/auth-implementation
                     </div>
-                    <a href="#" class="ui red button flat no-caps" style="margin-top: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 20px;" onclick="resetForm()">Reset Form</a>
-                    <a href="/dashboard" class="ui black button flat no-caps" style="margin-top: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 20px;">Submit Request</a>
                 </div>
-            </div>
+        </div>
         </form>
     </div>
 </div>
